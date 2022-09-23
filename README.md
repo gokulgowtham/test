@@ -119,6 +119,9 @@ cd conf >>
 
 ## 
 
+
+
+
  <role rolename="admin-gui,manager-gui,manager-script,manager-jmx,manager-status,admin-gui"/>
  <user username="tomcat" password="s3cret" roles="admin-gui,manager-gui,manager-script"/>
  
@@ -128,3 +131,29 @@ cd conf >>
 ----Restart serivce and try to login to tomcat application from the browser. This time it should be Successful
 
 
+
+
+
+
+
+
+steps are there in tomcat-server repo...
+Start jenkins and configure it ..
+
+yum install maven -y
+
+yum install git -y
+
+mvn --version
+
+https://github.com/ramannkhanna2/hello-world-maven-pipeline.git
+
+under execute shell >>
+
+mvn clean mvn package
+
+--- from dashboard , add "deploy to container" plugin under post build steps >> add deploy to container , mention tomcat server's username and password and url to deploy
+
+WAR/EAR files >> **/*.war
+
+SAVE AND BUILD
