@@ -94,8 +94,7 @@ cd bin/
 try to click on manager app ..
 
 find / -name context.xml
-    7  vi /opt/apache-tomcat-9.0.65/webapps/host-manager/META-INF/context.xml
-       
+       vi /opt/apache-tomcat-9.0.65/webapps/host-manager/META-INF/context.xml
        vi /opt/apache-tomcat-9.0.65/webapps/manager/META-INF/context.xml
        
        
