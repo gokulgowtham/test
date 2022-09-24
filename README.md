@@ -97,12 +97,13 @@ find / -name context.xml
     7  vi /opt/apache-tomcat-9.0.65/webapps/host-manager/META-INF/context.xml
        
        vi /opt/apache-tomcat-9.0.65/webapps/manager/META-INF/context.xml
-##
+       
+       
 
 <!--  <Valve className="org.apache.catalina.valves.RemoteAddrValve"
          allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" /> -->
-
-##
+         
+         
 
     8  vi /opt/apache-tomcat-9.0.65/webapps/manager/META-INF/context.xml
   
