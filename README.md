@@ -1,6 +1,3 @@
-PIPELINE :
-
-
 Creation of jenkins server :
 
 search >> ec2 >> instances
@@ -99,12 +96,12 @@ find / -name context.xml
        
        
 
-# <!--  <Valve className="org.apache.catalina.valves.RemoteAddrValve"
-         allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" /> --> #
+ <!--  <Valve className="org.apache.catalina.valves.RemoteAddrValve"
+         allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" /> -->
          
          
 
-    8  vi /opt/apache-tomcat-9.0.65/webapps/manager/META-INF/context.xml
+       vi /opt/apache-tomcat-9.0.65/webapps/manager/META-INF/context.xml
   
    10  cd bin/
    11  ls
@@ -118,19 +115,12 @@ cd conf >>
 
 
 
-# <role rolename="admin-gui,manager-gui,manager-script,manager-jmx,manager-status,admin-gui"/>
-  <user username="tomcat" password="s3cret" roles="admin-gui,manager-gui,manager-script"/> #
+ <role rolename="admin-gui,manager-gui,manager-script,manager-jmx,manager-status,admin-gui"/>
+ <user username="tomcat" password="s3cret" roles="admin-gui,manager-gui,manager-script"/>
   
   
 
 ----Restart serivce and try to login to tomcat application from the browser. This time it should be Successful
-
-
-
-
-
-
-
 
 steps are there in tomcat-server repo...
 Start jenkins and configure it ..
@@ -152,3 +142,5 @@ mvn clean mvn package
 WAR/EAR files >> **/*.war
 
 SAVE AND BUILD
+
+-- Now poll the pipeline
