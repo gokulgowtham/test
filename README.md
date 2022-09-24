@@ -100,8 +100,8 @@ find / -name context.xml
        
        
 
-<!--  <Valve className="org.apache.catalina.valves.RemoteAddrValve"
-         allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" /> -->
+# <!--  <Valve className="org.apache.catalina.valves.RemoteAddrValve"
+         allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" /> --> #
          
          
 
@@ -118,16 +118,11 @@ cd conf >>
 ---Update users information in the tomcat-users.xml file goto tomcat home directory and Add below users to conf/tomcat-users.xml file
 
 
-## 
 
-
-
-
- <role rolename="admin-gui,manager-gui,manager-script,manager-jmx,manager-status,admin-gui"/>
- <user username="tomcat" password="s3cret" roles="admin-gui,manager-gui,manager-script"/>
- 
- ##
-
+# <role rolename="admin-gui,manager-gui,manager-script,manager-jmx,manager-status,admin-gui"/>
+  <user username="tomcat" password="s3cret" roles="admin-gui,manager-gui,manager-script"/> #
+  
+  
 
 ----Restart serivce and try to login to tomcat application from the browser. This time it should be Successful
 
